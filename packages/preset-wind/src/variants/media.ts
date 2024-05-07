@@ -11,6 +11,11 @@ export const variantMotions: Variant[] = [
   variantParentMatcher('motion-safe', '@media (prefers-reduced-motion: no-preference)'),
 ]
 
+export const variantTransparency: Variant[] = [
+  variantParentMatcher('transparency-reduce', '@media (prefers-reduced-transparency: reduce)'),
+  variantParentMatcher('transparency-safe', '@media (prefers-reduced-transparency: no-preference)'),
+]
+
 export const variantOrientations: Variant[] = [
   variantParentMatcher('landscape', '@media (orientation: landscape)'),
   variantParentMatcher('portrait', '@media (orientation: portrait)'),
